@@ -7,259 +7,359 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/0f977cd8f2.js" crossorigin="anonymous"></script>
+	<!-- AOS Library -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
 	<link rel="stylesheet" href="tech.css">
 	<link rel="icon" type="image/png" href="../img/OIG1.png" sizes="900x900">
-	<title>TAZ - The TechBro</title>
+	<title>TAZ - Portfolio</title>
 </head>
 
 <body>
 	<main>
 		<header>
-
-			<nav class="navbar navbar-expand-lg bg-body-tertiary">
-				<div class="container-fluid container">
+			<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
+				<div class="container">
 					<a class="navbar-brand ms-3" href="index.php"><strong>TAZ - Portfolio</strong></a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-						aria-label="Toggle navigation">
+					<!-- <a class="navbar-brand fw-bold" href="#hero">TΛZ<span class="text-accent">.</span></a> -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-end me-3" id="navbarNavAltMarkup">
-						<div class="navbar-nav">
-							<a class="nav-link" aria-current="page" href="#about">ABOUT</a>
-							<a class="nav-link" aria-current="page" href="#work">WORKS</a>
-							<a class="nav-link" aria-current="page" href="#contact">CONTACT</a>
-							<!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
-						</div>
+					<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#work">Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
 					</div>
 				</div>
 			</nav>
 		</header>
 
-		<section id="about">
+	<section id="hero" class="hero-section d-flex align-items-center min-vh-100 text-center text-md-start">
+  <div class="container" >
+    <div class="hero-content">
+      <h1 class="fw-bold display-4 mb-3" data-aos="fade-down" data-aos-delay="100">
+        Hi, I’m <span class="text-accent">Timothy Adedotun</span>
+        <span class="fs-3 text-light">(TAZ)</span>
+      </h1>
+      <h4 class="mb-3 text-gray" data-aos="fade-left" data-aos-delay="50">Front-End Developer & Graphic Designer</h4>
+      <p class="lead mb-4 text-light-emphasis" data-aos="fade-left" data-aos-delay="100">
+        I build sleek, high-performing, and responsive websites that blend clean design with powerful functionality.
+      </p>
+      <div class="hero-buttons" data-aos="fade-left" data-aos-delay="200">
+        <a href="#work" class="btn btn-accent me-2">View My Work</a>
+        <a href="#contact" class="btn btn-outline-light">Hire Me</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional soft background glow -->
+  <div class="glow"></div>
+</section>
+
+
+		<section id="work" class="py-5">
 			<div class="container">
-				<div class="row ">
-					<div class="col-md-12">
-						<h4 class="ps-5 ">Timothy Adedotun (TAZ)</h4>
-						<p class="ps-5"> Front-End Web Developer </p>
-						<h3 class="px-5 text-center display-4">Hi there! I'm a budding Graphic and Web Designer based in
-							Lagos, Nigeria. I design graphic
-							posters/flyer, develop Responsive Websites and handle backend tasks. Feel free to take a
-							tour of
-							some of my works.</h3>
-					</div>
-					<!-- <div class="col-6 border">
-                    <img class="image" src="/img/76EBBFBE-5BE0-43FC-AB52-B33C28C36CA0-removebg-preview (1).png"
-                        alt="IMage of TAZII">
-						<picture>
-						<source media="(min-width: 650px)" srcset="img_food.jpg">
-						<source media="(min-width: 465px)" srcset="img_car.jpg">
-						<img src="img_girl.jpg">
-						</picture>
-                </div> -->
-				</div>
-			</div>
-			<!-- 
-        <span class="butt">
-            <a href="#work" class="btn btn-dark mx-5 my-4 rounded-3">View Catalogue</a>
-        </span> -->
-
-
-		</section>
-
-		<section id="work">
-			<div class="container">
-				<!-- <h2 class="py-3 text-center">MY WORKS</h2> -->
-				<div id="home" class="row">
-					<div class="col-md-12 col-lg-6 g-3">
-						<div class="p-3"><a href="https://https://travmax.netlify.app//" target="_blank" rel=""><img
-									src="/img/Travmax.jpeg" style="width:100%" alt="img5"></a>
-							<small>TravMax Limited</small>
-						</div>
-						<hr>
-						<div class="p-3"><a href="https://chowkandos.netlify.app/" target="_blank" rel=""><img
-									src="/img/chowkandos.png" style="width:100%" alt="img5"></a>
-							<small>Kandos Restaurant</small>
-						</div>
-						<hr>
-
-						<div class="p-3"><a href="https://tazii2x.netlify.app/" target="_blank" rel=""><img
-									src="../img/tazii2x.png" style="width:100%" alt="img6"></a>
-							<small>TAZII - The Artist</small>
-						</div>
-
-					</div>
-
-					<div class="col-md-12 col-lg-6 g-3">
-						<div class="p-3"><a href="https://swiftlgstcs.netlify.app/" target="_blank" rel=""><img
-									src="../img/swift.png" style="width:100%" alt="img6"></a>
-							<small>Swift Logistics Company</small>
-						</div>
-						<hr>
-						<div class="p-3"><a href="https://3iii-designs.netlify.app/" target="_blank" rel=""><img
-									src="../img/3iii.png" style="width:100%" alt="img6"></a>
-							<small>3rd Eye Designs</small>
-						</div>
-						<hr>
-						<div class="p-3"><a href="https://spectrasurvey.netlify.app/" target="_blank" rel=""><img
-									src="../img/spectra.png " style="width:100%" alt="img2"></a>
-							<small>Spectra Survey</small>
-						</div>
-						<hr>
-						<div class="p-3"> <a href="https://zillionline.netlify.app/" target="_blank" rel=""><img
-									src="../img/zz.png" style="width:100%" alt="img1"></a>
-							<small>Zilli Online Store</small>
+				<h2 class="text-center mb-5 fw-bold" data-aos="fade-up">My Projects</h2>
+				<div class="row g-4">
+					<!-- Single Project Card -->
+					<div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="img/Travmax.jpeg" class="img-fluid" alt="TravMax">
+							<div class="project-overlay">
+								<h5>TravMax Limited</h5>
+								<div class="links">
+									<a href="https://travmax.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
 						</div>
 					</div>
-
-				</div>
-				<hr class="my-4">
-				<div class="pt-3">
-					<h2 class=" text-center">WORK EXPERIENCE</h2>
-					<p class="text-center">
-						I am a budding self-taught Web Developer with over a year of experience in Full Stack Web
-						Development, looking to build a stable career in Tech. I have designed and developed responsive
-						websites as a freelance
-						developer and utilized my skills in general IT duties. Determined to gain more knowledge in the
-						field, I demonstrate great critical thinking and analytical skills towards any given task. I am
-						currently open to internships and junior developer roles. </p>
-					<div class="row p-4  d-flex justify-content-center">
-					
-						<div class="col-md-4 text-center">
-							<h4>Igbigi Finance - Front End Developer 
-							</h4><span>(June. 2024 - July. 2025)</span> the other day she was suppsed to come
-							<ul>
-								<li>
-									Handled general IT duties including website maintenance, troubleshooting,
-									and debugging to ensure optimal performance. 
-								</li>
-								<li>
-									Designed and developed funcƟonal and user-friendly web pages for the
-									company’s online platform.  thet ther 
-								</li>
-								<li>
-									Collaborated with cross-functional teams to gather requirements and
-								</li>
-							</ul>
+					<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/pls1.jpeg" class="img-fluid" alt="Preye Lite Studios">
+							<div class="project-overlay">
+								<h5>Preye Lite Studios</h5>
+								<div class="links">
+									<a href="https://preyelitestudios.com/" target="_blank" class="btn btn-sm btn-light"
+										rel="ef">View</a>
+								</div>
+							</div>
 						</div>
-
-						<div class="col-md-4 text-center">
-							<h4>TagDev Technologies - Web Developer Intern</h4>
-							<span>(Aug. 2023 - June. 2024)</span>
-							<ul>
-								<li>
-									Handled general IT duties including website maintenance, troubleshooting,
-									and debugging to ensure optimal performance.
-
-								</li>
-								<li>
-									Designed and developed funcƟonal and user-friendly web pages for the
-									company’s online platform.
-								</li>
-								<li>
-									Collaborated with cross-functional teams to gather requirements and
-								</li>
-							</ul>
+					</div>
+					<div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="/img/chowkandos.png" class="img-fluid" alt="Kandos Restaurant">
+							<div class="project-overlay">
+								<h5>Kandos Restaurant</h5>
+								<div class="links">
+									<a href="https://chowkandos.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light" rel="ef">View</a>
+								</div>
+							</div>
 						</div>
-
-						<div class="col-md-4 text-center">
-							<h4>Kel First Infotech - Brand & Graphic Designer</h4>
-							<span>(May. 2022 - July. 2023)</span>
-							<ul>
-								<li>Created and maintained brand visual identity and marketing materials for Kel First.</li>
-								<li>Designed social media graphics, product visuals, and digital adverƟsements.</li>
-								<li>Collaborated with the markeƟng team to align visual content with brand goals.</li>
-								<li>Improved overall design consistency across company platforms and media.</li>
-							</ul>
+					</div>
+					<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="img/tazii2x.png" class="img-fluid" alt="TAZII - The Artist">
+							<div class="project-overlay">
+								<h5>TAZII - The Artist</h5>
+								<div class="links">
+									<a href="https://tazii2x.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
 						</div>
-
-
+					</div>
+					<div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/swift.png" class="img-fluid" alt="Swift Logistics Company">
+							<div class="project-overlay">
+								<h5>Swift Logistics Company</h5>
+								<div class="links">
+									<a href="https://swiftlgstcs.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/zz.png" class="img-fluid" alt="Zilli Online Store">
+							<div class="project-overlay">
+								<h5>Zilli Online Store</h5>
+								<div class="links">
+									<a href="https://zillionline.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6" data-aos="fade-right" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/3iii.png" class="img-fluid" alt="Zilli Online Store">
+							<div class="project-overlay">
+								<h5>3rd Eye Designs</h5>
+								<div class="links">
+									<a href="https://3iii-designs.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/spectra.png" class="img-fluid" alt="Spectra Survey Form">
+							<div class="project-overlay">
+								<h5>Spectra Survey</h5>
+								<div class="links">
+									<a href="https://spectrasurvey.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-
 		</section>
-		<hr class="my-4" style="margin: 20px;">
-		<section id="inquire">
-			<div class="container">
-				<form method="post">
-					<h4>Like what you see? Let's get in touch.</h4>
-					<div class="row">
-						<div class="col-md-6">
-							<label for="exampleFormControlInput1" class="form-label"></label>
-							<input type="text" class="form-control" name="name" id="exampleFormControlInput1"
-								placeholder="Your Full Name" required>
-						</div>
-						<div class="col-md-6">
-							<label for="exampleFormControlInput1" class="form-label"></label>
-							<input type="email" class="form-control" name="email" id="exampleFormControlInput1"
-								placeholder="Your Email" required>
-						</div>
-						<div class="col-12">
-							<label for="exampleFormControlInput1" class="form-label"></label>
-							<input type="subjectl" class="form-control" name="subject" id="exampleFormControlInput1"
-								placeholder="Subject" required>
-						</div>
-						<div class="col-12">
-							<label for="exampleFormControlTextarea1" class="form-label"></label>
-							<textarea class="form-control" name="message" id="exampleFormControlTextarea1"
-								placeholder="Leave a Message" rows="3" required></textarea>
-						</div>
-						<div class=" text-center pt-3"> <button type="submit" name="submit"
-								class="btn btn-outline-dark">SEND MESSAGE</button></div>
 
-				</form>
+
+
+
+		<section id="about" class="about-section py-5">
+			<div class="container">
+				<div class="text-center mb-5">
+					<div>
+						<h2 class="fw-bold mb-3" data-aos="fade-up">About Me</h2>
+						<span class="stroke"></span>
+
+						<p class="lead mx-auto" style="max-width: 800px;" data-aos="fade-left" data-aos-delay="200">
+							I'm <strong>Timothy Adedotun Alagbe</strong>, a budding self-taught
+							<strong>Full-Stack Web Developer</strong> and <strong>Graphic Designer</strong> based in
+							Lagos, Nigeria.
+							With a passion for code and a keen eye for design, I specialize in crafting visually
+							appealing,
+							user-friendly web experiences that merge creativity with functionality.
+						</p>
+						<div class="about-content mx-auto" style="max-width: 850px;">
+							<p data-aos="fade-right" data-aos-delay="200">
+								My journey into web development began with curiosity about how websites are structured
+								and
+								function behind the scenes. This curiosity evolved into a solid foundation in
+								<strong>HTML, CSS, JavaScript, and
+									Bootstrap</strong> and <strong>PHP, MySQL</strong> for back-end integration and
+								management,
+								alongside experience with design tools such as <strong>CorelDraw</strong>, <strong>Adobe
+									Photoshop</strong>, and
+								<strong>Canva</strong>... I thrive on transforming ideas into
+								digital realities, ensuring every project I undertake is uniquely crafted to meet my
+								clients’ goals while maintaining clean, efficient, and seamless user experiences.
+							</p>
+							<p data-aos="fade-left" data-aos-delay="200">
+								Beyond coding and design, I enjoy Video Gaming, surfing new music and playing
+								Basketball. I’m dedicated to
+								continuous learning, problem-solving, and
+								innovation. Determined to grow further as a developer, I bring critical thinking,
+								problem-solving, and
+								adaptability to my work.
+								I bring strong analytical thinking and adaptability to every project I take on.
+							</p>
+
+							<!-- Skills Section -->
+							<div class="skills mt-5" data-aos="fade-up" data-aos-delay="100">
+								<h4 class="fw-semibold mb-3">Core Skills</h4>
+								<div class="skill-tags d-flex flex-wrap justify-content-center">
+									<span>HTML5</span>
+									<span>CSS3</span>
+									<span>JavaScript</span>
+									<span>Bootstrap</span>
+									<span>PHP</span>
+									<span>MySQL</span>
+									<span>Git & GitHub</span>
+									<span>CorelDraw</span>
+									<span>Photoshop</span>
+									<span>Canva</span>
+									<!-- <span>UI/UX Design</span> -->
+									<span>Responsive Web Design</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+
+
+		<section id="experience" class="py-5">
+			<div class="container">
+				<h2 class="text-center mb-5 fw-bold">Work Experience</h2>
+				<div class="timeline ">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-12 col-lg-4 gap-4" data-aos="fade-right">
+							<div class="timeline-item">
+								<div class="text-center">
+									<h4>Igbigi Finance - Front End Developer</h4>
+									<h6>(June. 2024 - July. 2025)</h6>
+								</div>
+								<ul class="modern-list">
+									<li>
+										Designed and developed functional and user-friendly web pages for the company’s
+										online platform.
+									</li>
+									<li>
+										Handled general IT duties including website maintenance, troubleshooting, and
+										debugging to ensure optimal performance.
+									</li>
+									<li>
+										Collaborated with team members to enhance UI/UX and improve site interactivity.
+									</li>
+									<li>
+										Integrated JavaScript functionalities to make key components dynamic and
+										efficient.
+									</li>
+									<li>
+										Ensured cross-browser compatibility and optimized website performance for better
+										loading speeds.
+									</li>
+								</ul>
+
+							</div>
+						</div>
+
+						<div class="col-md-12 col-lg-4 gap-4" data-aos="fade-up">
+							<div class="timeline-item">
+								<div class="text-center">
+									<h4>TagDev Technologies - Web Developer Intern</h4>
+									<h6>(Aug. 2023 - June. 2024)</h6>
+								</div>
+								<ul class="modern-list">
+									<li>Assisted in the development and maintenance of client websites using HTML,
+										CSS,
+										and
+										JavaScript.</li>
+									<li>Contributed to the design and implementation of responsive web layouts and
+										user
+										interfaces.</li>
+									<li>Worked closely with senior developers to debug, test, and deploy updates.
+									</li>
+									<li>Gained hands-on experience with version control (Git) and collaborative
+										development
+										workflows.</li>
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="col-md-12 col-lg-4 gap-4" data-aos="fade-left">
+							<div class="timeline-item">
+								<div class="text-center">
+									<h4 class="px-1">Kel First Infotech - Brand & Graphic Designer</h4>
+									<h6>(May. 2022 - July. 2023)</h6>
+								</div>
+								<ul class="modern-list">
+									<li>Created and maintained brand visual identity and marketing materials for Kel
+										First.
+									</li>
+									<li>Designed social media graphics, product visuals, and digital advertisements.
+									</li>
+									<li>Collaborated with the marketing team to align visual content with brand
+										goals.
+									</li>
+									<li>Improved overall design consistency across company platforms and media.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<hr class="my-4" style="margin: 20px;">
-		<section id="contact">
+
+		<section id="contact" class="py-5 text-light">
 			<div class="container">
-				<h2 class="py-3 text-center ctct">CONTACT ME</h2>
-				<div class="row ">
-					<div class="col-sm-6 col-md-6 col-lg-6 sub">
-						<form method="post">
-							<p>Subscribe to stay informed on the latest News and Updates on our brand.</p>
-							<div class="input-group">
-								<input type="email" class="form-control" name="newSub" placeholder="Enter Email"
-									aria-label="Email" aria-describedby="button-addon2">
-								<button class="btn btn-outline-dark" type="submit" name="submit"
-									id="button-addon2">Subscribe</button>
+				<h2 class="text-center mb-4 fw-bold" data-aos="fade-up">Like what you see? Let’s Connect</h2>
+				<div class="row justify-content-center">
+					<div class="col-md-8 pt-5">
+						<form method="post" class="contact-form" data-aos="zoom-in" data-aos-delay="200">
+							<div class="row g-3">
+								<div class="col-md-6"><input type="text" name="name" class="form-control"
+										placeholder="Your Name" required></div>
+								<div class="col-md-6"><input type="email" name="email" class="form-control"
+										placeholder="Your Email" required></div>
+								<div class="col-12"><input type="text" name="subject" class="form-control"
+										placeholder="Subject" required></div>
+								<div class="col-12"><textarea name="message" rows="4" class="form-control"
+										placeholder="Your Message" required></textarea></div>
+								<div class="text-center" data-aos="fade-up" data-aos-delay="200"><button type="submit"
+										class="btn btn-accent mt-3 mb-3">Send
+										Message</button></div>
 							</div>
 						</form>
 					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6  ps-5 ftxt ">
-						<div class="footertext">
-							<p><i class="fa-solid fa-location-dot fa-lg"></i> Lagos, Nigeria</p>
-							<p><i class="fa-solid fa-phone fa-lg"></i> +(234) 8100606717</p>
-							<p><i class="fa-solid fa-phone fa-lg"></i> +(234) 8100606717</p>
-							<p><i class="fa-solid fa-envelope fa-lg"></i> atalagbe19@gmail.com</p>
-						</div>
-
-						<div class="ficon">
-							<a href="www.linkedin.com/in/adedotun-alagbe" target="_blank" rel="noopener noreferrer"
-								class="p-2"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-							<a href="http://github.com/moonboy90210" target="_blank" rel="noopener noreferrer"
-								class="p-2"><i class="fa-brands fa-github fa-xl"></i></a>
-							<a href="http://www.instagram.com/tazii2x" rel="noopener noreferrer" target="_blank"
-								class="p-2"><i class="fa-brands fa-instagram fa-xl"></i></a>
-							<a href="http://www.twitter.com/tazii2x" rel="noopener noreferrer" target="_blank"
-								class="p-2"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
-							<a href="http://wa.me/8100606717" target="_blank" rel="noopener noreferrer" class="p-2"><i
-									class="fa-brands fa-whatsapp fa-xl"></i></a>
-						</div>
+					<div class="col-sm-12 d-flex justify-content-center text-center py-5" data-aos="fade-up">
+						<p class="social-link"><a href="tel:+(234) 8100606717" target="_blank" class="social-link"><i
+									class="fa-solid fa-phone"></i></a></p>
+						<p class="social-link"><a href="mailto:atalagbe19@gmail.com" target="_blank"
+								class="social-link"><i class="fa-solid fa-envelope"></i></a></p>
+						<p class="social-link"><a href="www.linkedin.com/in/adedotun-alagbe" target="_blank"
+								class="social-link"><i class="fab fa-linkedin"></i></a></p>
+						<p class="social-link"><a href="http://github.com/moonboy90210" target="_blank"
+								class="social-link"><i class="fab fa-github"></i></a></p>
+						<p class="social-link"><a href="http://wa.me/8100606717" class="social-link"><i
+									class="fab fa-whatsapp"></i></a></p>
 					</div>
-
-
 				</div>
+
+
 			</div>
 		</section>
-
-
 	</main>
-	<hr>
+
 	<footer>
-		<div class="footer">
-			<div class="text-center">
+
+		<div class="footer py-3">
+			<div class="text-center align-items-center justify-content-center">
 				<p>Copyright © 2024 TazTech. All Rights Reserved. </p>
 			</div>
 		</div>
@@ -267,6 +367,17 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
 		crossorigin="anonymous"></script>
+	<!-- AOS Script -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			duration: 1000,   // animation duration in ms
+			once: true,       // whether animation should happen only once
+			easing: 'ease-in-out', // smooth motion
+			offset: 100       // distance from bottom to trigger animation
+		});
+	</script>
+
 </body>
 
 </html>
