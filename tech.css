@@ -397,7 +397,6 @@ body {
 
 .timeline-item {
 	margin-bottom: 2rem;
-	padding-left: 20px;
 	position: relative;
 
 }
@@ -418,7 +417,6 @@ body {
 }
 
 .timeline-item ul {
-	list-style: disc;
 	margin-top: 20px;
 }
 
@@ -494,8 +492,6 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
-	/* padding: 20px; */
 }
 
 
@@ -505,28 +501,4 @@ footer {
 	border-top: solid 1px #dfdfdf;
 	color: #aaa;
 	letter-spacing: 0.5px;
-}
-
-@media (max-width: 768px) {
-	#hero {
-		text-align: center;
-		padding-top: 120px;
-	}
-
-	.hero-img {
-		width: 60%;
-		margin-top: 20px;
-	}
-
-	.nav-link {
-		text-align: center;
-	}
-
-	.project-card {
-		margin-bottom: 1rem;
-	}
-}
-
-ul li {
-	text-decoration: dashed;
 }
