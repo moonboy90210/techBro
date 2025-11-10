@@ -22,7 +22,8 @@
 		<header>
 			<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-transparent">
 				<div class="container">
-					<a class="navbar-brand ms-3" href="index.php"><strong>TAZ - Portfolio</strong></a>
+					<a class="navbar-brand ms-3" href="index.php"><span class="text-light">TΛZ</span><strong
+							class="text-accent">TECH</strong></a>
 					<!-- <a class="navbar-brand fw-bold" href="#hero">TΛZ<span class="text-accent">.</span></a> -->
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 						<span class="navbar-toggler-icon"></span>
@@ -38,7 +39,7 @@
 				</div>
 			</nav>
 		</header>
-	
+
 
 		<section id="hero" class="hero-section d-flex align-items-center min-vh-100 text-center text-md-start">
 			<div class="container">
@@ -62,13 +63,18 @@
 
 			<!-- Optional soft background glow -->
 			<div class="glow"></div>
+			<div class="scroll-indicator">
+
+				<span class="arrow d-none d-lg-block"><a href="#work" class="btn"></a></span>
+			</div>
+
 		</section>
 
 
 		<section id="work" class="py-5">
 			<div class="container">
 				<h2 class="text-center fw-bold" data-aos="fade-up">PROJECTS</h2>
-					<div class="underline mx-auto mb-5"></div>
+				<div class="underline mx-auto mb-5"></div>
 				<div class="row g-4">
 					<!-- Single Project Card -->
 					<div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200">
@@ -107,6 +113,18 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-6 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/survey.JPEG" class="img-fluid" alt="Spectra Survey Form">
+							<div class="project-overlay">
+								<h5>Spectre Survey</h5>
+								<div class="links">
+									<a href="https://spectresurvey.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
 						<div class="project-card shadow-sm rounded-4 overflow-hidden">
 							<img src="img/tazii2x.png" class="img-fluid" alt="TAZII - The Artist">
@@ -119,19 +137,7 @@
 							</div>
 						</div>
 					</div>
-						<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
-						<div class="project-card shadow-sm rounded-4 overflow-hidden">
-							<img src="../img/zz.png" class="img-fluid" alt="Zilli Online Store">
-							<div class="project-overlay">
-								<h5>Zilli Online Store</h5>
-								<div class="links">
-									<a href="https://zillionline.netlify.app/" target="_blank"
-										class="btn btn-sm btn-light">View</a>
-								</div>
-							</div>
-						</div>
-					</div>
-						<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+					<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
 						<div class="project-card shadow-sm rounded-4 overflow-hidden">
 							<img src="../img/igbigiBackground.JPEG" class="img-fluid" alt="Zilli Online Store">
 							<div class="project-overlay">
@@ -143,11 +149,23 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-12 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+						<div class="project-card shadow-sm rounded-4 overflow-hidden">
+							<img src="../img/zz.png" class="img-fluid" alt="Zilli Online Store">
+							<div class="project-overlay">
+								<h5>Zilli Online Store</h5>
+								<div class="links">
+									<a href="https://zillionline.netlify.app/" target="_blank"
+										class="btn btn-sm btn-light">View</a>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200">
 						<div class="project-card shadow-sm rounded-4 overflow-hidden">
 							<img src="../img/swift.png" class="img-fluid" alt="Swift Logistics Company">
 							<div class="project-overlay">
-								<h5>Swift Logistics Company</h5>
+								<h5>Swift Logistics</h5>
 								<div class="links">
 									<a href="https://swiftlgstcs.netlify.app/" target="_blank"
 										class="btn btn-sm btn-light">View</a>
@@ -167,24 +185,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-lg-6" data-aos="fade-left" data-aos-delay="200">
-						<div class="project-card shadow-sm rounded-4 overflow-hidden">
-							<img src="../img/spectra.png" class="img-fluid" alt="Spectra Survey Form">
-							<div class="project-overlay">
-								<h5>Spectra Survey</h5>
-								<div class="links">
-									<a href="https://spectrasurvey.netlify.app/" target="_blank"
-										class="btn btn-sm btn-light">View</a>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 		</section>
 
 		<!-- About Section -->
 		<section id="about" class="about-section py-5">
-			<div class="container" >
+			<div class="container">
 				<div class="text-center mb-5">
 					<h2 class="fw-bold text-accent" data-aos="fade-up">ABOUT ME</h2>
 					<div class="underline mx-auto"></div>
@@ -195,8 +201,9 @@
 				</div>
 
 				<div class="about-box p-4 rounded-4 shadow-lg" data-aos="fade-right">
-					<p class="lead mx-auto text-center"  data-aos="fade-left" data-aos-delay="200">
-						I'm <strong class="text-accent fw-semibold" >Timothy Adedotun Alagbe</strong>, a budding self-taught
+					<p class="lead mx-auto text-center" data-aos="fade-left" data-aos-delay="200">
+						I'm <strong class="text-accent fw-semibold">Timothy Adedotun Alagbe</strong>, a budding
+						self-taught
 						<strong>Full-Stack Web Developer</strong> and <strong>Graphic Designer</strong> based in
 						Lagos, Nigeria.
 						With a passion for code and a keen eye for design, I specialize in crafting visually
@@ -276,12 +283,12 @@
 		<section id="experience" class="py-5">
 			<div class="container">
 				<h2 class="text-center fw-bold" data-aos="fade-up">WORK EXPERIENCE</h2>
-					<div class="underline mx-auto mb-5"></div>
+				<div class="underline mx-auto mb-5"></div>
 
 				<div class="timeline ">
 					<div class="row d-flex justify-content-center">
 						<div class="col-md-12 col-lg-4 gap-4" data-aos="fade-right">
-							<div class="timeline-item" >
+							<div class="timeline-item">
 								<div class="text-center">
 									<h4 class="px-3">Igbigi Finance - Front End Developer</h4>
 									<h6>(June. 2024 - July. 2025)</h6>
@@ -362,8 +369,9 @@
 		<section id="contact" class="py-5 text-light">
 			<div class="container">
 				<h2 class="text-center fw-bold text-accent" data-aos="fade-up">CONTACT</h2>
-					<div class="underline mx-auto"></div>
-					<p class="text-center text-light-emphasis mt-3" data-aos="fade-right">Like what you see? Let’s Connect!</p>
+				<div class="underline mx-auto"></div>
+				<p class="text-center text-light-emphasis mt-3" data-aos="fade-right">Like what you see? Let’s Connect!
+				</p>
 				<div class="row justify-content-center">
 					<div class="col-md-8 pt-5">
 						<form method="post" class="contact-form" data-aos="zoom-in" data-aos-delay="200">
@@ -410,6 +418,35 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
 		crossorigin="anonymous"></script>
+	<!-- NAVBAR SCROLL -->
+	<script>
+		let lastScrollTop = 0;
+		const navbar = document.querySelector('.navbar');
+
+		window.addEventListener('scroll', () => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+			if (scrollTop > lastScrollTop && scrollTop > 100) {
+				// Scroll down → hide navbar
+				navbar.style.transform = 'translateY(-100%)';
+				navbar.style.transition = 'transform 0.4s ease';
+			} else {
+				// Scroll up → show navbar
+				navbar.style.transform = 'translateY(0)';
+				navbar.style.transition = 'transform 0.4s ease';
+			}
+			if (window.scrollY > 0) {
+				navbar.classList.add('scrolled');
+			} else {
+				navbar.classList.remove('scrolled');
+			}
+			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+		});
+
+
+
+	</script>
+
 	<!-- AOS Script -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
@@ -421,38 +458,38 @@
 		});
 	</script>
 	<script>
-  // ======= CLOSE NAVBAR ON LINK CLICK =======
-  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const navbarCollapse = document.querySelector('.navbar-collapse');
-      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
-      bsCollapse.hide();
-    });
-  });
+		// ======= CLOSE NAVBAR ON LINK CLICK =======
+		document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+			link.addEventListener('click', () => {
+				const navbarCollapse = document.querySelector('.navbar-collapse');
+				const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
+				bsCollapse.hide();
+			});
+		});
 
-  // ======= ACTIVE LINK ON SCROLL =======
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+		// ======= ACTIVE LINK ON SCROLL =======
+		const sections = document.querySelectorAll('section');
+		const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 
-  window.addEventListener('scroll', () => {
-    let current = '';
+		window.addEventListener('scroll', () => {
+			let current = '';
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 80; // adjust offset based on navbar height
-      const sectionHeight = section.clientHeight;
-      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute('id');
-      }
-    });
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop - 80; // adjust offset based on navbar height
+				const sectionHeight = section.clientHeight;
+				if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+					current = section.getAttribute('id');
+				}
+			});
 
-    navLinks.forEach(link => {
-      link.classList.remove('active');
-      if (link.getAttribute('href').includes(current)) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
+			navLinks.forEach(link => {
+				link.classList.remove('active');
+				if (link.getAttribute('href').includes(current)) {
+					link.classList.add('active');
+				}
+			});
+		});
+	</script>
 
 
 </body>

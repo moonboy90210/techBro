@@ -29,9 +29,11 @@ body {
 /* Navbar */
 
 .navbar {
+	display: block;
 	padding: 1rem 0;
-	transition: all 0.4s ease;
 	color: #fff;
+	transition: background 0.4s ease, box-shadow 0.4s ease;
+  background: transparent;
 }
 
 .navbar.scrolled {
@@ -114,6 +116,7 @@ body {
 	overflow: hidden;
 	animation: gradientMove 12s ease infinite;
 	padding: 120px 0;
+	  /* animation: bounce 2s infinite; */
 }
 
 .hero-content {
@@ -139,6 +142,12 @@ body {
 	padding: 10px 24px;
 	border-radius: 30px;
 	transition: all 0.3s ease;
+	  animation: pulse 2.5s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(112, 0, 216, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(112, 0, 216, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(112, 0, 216, 0); }
 }
 
 .btn-accent:hover {
@@ -147,6 +156,7 @@ body {
 	background: white;
 	box-shadow: 0 6px 18px rgba(112, 0, 216, 0.4);
 }
+
 
 .btn-outline-light {
 	border: 1.5px solid var(--light);
@@ -162,6 +172,28 @@ body {
 	transform: translateY(-3px);
 	box-shadow: 0 6px 18px rgba(112, 0, 216, 0.4);
 
+}
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 80%;
+  transform: translateX(50%);
+  animation: bounce 2s infinite;
+}
+
+.scroll-indicator .arrow {
+  width: 20px;
+  height: 20px;
+  border-left: 2px solid var(--light);
+  border-bottom: 2px solid var(--light);
+  transform: rotate(135deg);
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -10px); }
 }
 
 /* Background glow */
