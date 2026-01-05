@@ -114,7 +114,7 @@ body {
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 }
-/* Hero */
+/* Hero Section*/
 .hero-section {
 	position: relative;
 	background: linear-gradient(-45deg, #111, #1a001f, #240046, #111);
@@ -207,7 +207,7 @@ body {
   50% { transform: translate(-50%, -10px); }
 }
 
-/* Background glow */
+/* Background transform*/
 .glow {
 	position: absolute;
 	top: 40%;
@@ -253,11 +253,8 @@ body {
 		padding: 8px 20px;
 	}
 }
-	/* background: linear-gradient(135deg, #f9f9fb, #eef1f5);
-	color: #333;
-	line-height: 1.8; */
 
-/* About */
+/* About Section */
 .about-section {
   position: relative;
   background: var(--dark);
@@ -371,7 +368,7 @@ body {
   }
 }
 
-/* Projects */
+/* Projects Secction */
 #work {
 	background: #fff;
 }
