@@ -39,7 +39,7 @@ if (isset($_POST["submit"])) {
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 	<script src="https://kit.fontawesome.com/0f977cd8f2.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="tech.css">
-	<title>TAZ - The TechBro</title>
+	<title>Timothy Adedotun | Front-End Developer</title>
 </head>
 
 <body>
