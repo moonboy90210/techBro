@@ -252,7 +252,7 @@ function initScrollProgress() {
 // ===================================
 // INTERSECTION OBSERVER FOR STATS
 // ===================================
-/*
+
 function animateStats() {
     const stats = document.querySelectorAll('.stat-number');
     
@@ -293,7 +293,7 @@ function animateValue(element, start, end, duration) {
 
 // Initialize stats animation
 animateStats();
-*/
+
 
 // ===================================
 // KEYBOARD SHORTCUTS

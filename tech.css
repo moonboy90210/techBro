@@ -256,7 +256,7 @@ button {
 	background: var(--color-surface);
 }
 
-/* .hero-stats {
+.hero-stats {
     display: flex;
     gap: var(--spacing-xl);
     padding-top: var(--spacing-lg);
@@ -279,7 +279,7 @@ button {
 .stat-label {
 	font-size: 0.875rem;
 	color: var(--color-text-tertiary);
-} */
+}
 
 /* ===================================
    SECTION STYLES
